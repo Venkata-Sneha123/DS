@@ -9,10 +9,10 @@ typedef struct node
     struct node *link;
 }queue;
 
-void enqueue(int ,queue *,queue *);
-void dequeue(queue *,queue *);
-void front_element(queue *,queue *);
-void Display(queue *,queue *);
+void enqueue(int ,queue **,queue **);
+void dequeue(queue **,queue **);
+void front_element(queue **,queue **);
+void Display(queue **,queue **);
 
 int main()
 {
@@ -115,3 +115,24 @@ void Display(queue **front_arg,queue **rear_arg)
         printf("\n");
     }
 }
+
+
+/*
+
+output:
+The Enqueued element is 10
+The Enqueued element is 20
+The Enqueued element is 30
+10<--20<--30
+the Front element in a queue: 10
+Dequeued element: 10
+Dequeued element: 20
+30
+Dequeued element: 30
+Queue is empty
+The Enqueued element is 40
+40
+Dequeued element: 40
+Queue is empty
+
+*/

@@ -99,3 +99,25 @@ pop(&top);
 display(&top);
 return 0;
 }
+
+
+/*
+
+output:
+Inserted element is : 10
+Inserted element is : 20
+Inserted element is : 30
+Topmost element is :30
+Stack elements are: 30 20 10 
+Deleted element is : 30
+Topmost element is :20
+Deleted element is : 20
+Topmost element is :10
+Deleted element is : 10
+Stack is empty
+Inserted element is : 40
+Stack elements are: 40 
+Deleted element is : 40
+Stack is empty
+
+*/

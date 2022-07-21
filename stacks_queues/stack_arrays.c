@@ -113,3 +113,40 @@ printf("Elements in stack:\n");
 for(i=0;i<=tos;i++)
     printf("%d\n",stack[i]);
 }
+
+
+
+/*
+
+output:
+Inserted elements = 1
+Inserted elements = 2
+Inserted elements = 3
+Inserted elements = 4
+Stack is full
+peek element = 4
+Elements in stack:
+1
+2
+3
+4
+poped element = 4
+min element = 1
+poped element = 3
+min element = 1
+peek element = 2
+poped element = 2
+min element = 1
+poped element = 1
+Stack is empty
+Stack is empty
+Stack is empty
+Inserted elements = 6
+Elements in stack:
+6
+peek element = 6
+poped element = 6
+Stack is empty
+Stack is empty
+
+*/

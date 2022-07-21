@@ -51,6 +51,7 @@ void deque()
 if(front == rear+1)
 {
     printf("queue is empty\n");
+    rear=-1;
     return;
 }
 else
@@ -77,3 +78,29 @@ else
         printf("%d\n",q[i]);
 }
 }
+
+
+/*
+
+output:
+Inserted elements = 1
+Inserted elements = 2
+Inserted elements = 3
+Inserted elements = 4
+Inserted elements = 5
+queue is full
+Elements in queue are:
+1
+2
+3
+4
+5
+deleted element = 1
+deleted element = 2
+deleted element = 3
+deleted element = 4
+deleted element = 5
+queue is empty
+queue is empty
+
+*/
