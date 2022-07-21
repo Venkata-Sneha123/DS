@@ -9,10 +9,10 @@ typedef struct node
     struct node *link;
 }queue;
 
-void enqueue(int ,queue **,queue **);
-void dequeue(queue **,queue **);
-void front_element(queue **,queue **);
-void Display(queue **,queue **);
+void enqueue(int ,queue *,queue *);
+void dequeue(queue *,queue *);
+void front_element(queue *,queue *);
+void Display(queue *,queue *);
 
 int main()
 {
@@ -25,6 +25,10 @@ int main()
     front_element(&front,&rear);
     dequeue(&front,&rear);
     dequeue(&front,&rear);
+    Display(&front,&rear);
+    dequeue(&front,&rear);
+    Display(&front,&rear);
+    enqueue(40,&front,&rear);
     Display(&front,&rear);
     dequeue(&front,&rear);
     Display(&front,&rear);
@@ -81,6 +85,11 @@ void dequeue(queue **front_arg,queue **rear_arg)
         *front_arg=temp->link;
         printf("Dequeued element: %d\n",temp->data);
         free(temp);
+        temp=NULL;
+        if(temp ==NULL)
+        {
+            *rear_arg=NULL;
+        }
     }
 }
 
